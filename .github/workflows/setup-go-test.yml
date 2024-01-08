@@ -8,7 +8,7 @@ jobs:
   go-action-test:
     runs-on: ubuntu-20.04-ppc64le
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: shahidhs-ibm/setup-go@ppc64le
         with:
           go-version: '1.21.1'
