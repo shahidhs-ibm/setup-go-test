@@ -18,3 +18,5 @@ jobs:
           architecture: 'ppc64le'
       - run: |
           go version
+      - name: Sleep for 150 seconds
+        run: sleep 150s
