@@ -7,6 +7,9 @@ on:
 jobs:
   go-action-test:
     runs-on: ubuntu-22.04-ppc64le
+    strategy:
+      matrix:
+        go: [ '1.17', '1.18', '1.19', '1.20', '1.21' ]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v4
