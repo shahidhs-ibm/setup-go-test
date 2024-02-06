@@ -6,7 +6,7 @@ on:
 
 jobs:
   go-action-test:
-    runs-on: ubuntu-22-ppc64le
+    runs-on: ubuntu-22.04-ppc64le
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v4
